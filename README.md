@@ -36,3 +36,34 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+
+https://www.youtube.com/watch?v=qp0-L_M3Ad4&t=147s(Portfolio Website With Next JS, Tailwind CSS & Framer Motion)
+
+//https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
+## With Tailwind CSS
+import { Inter } from 'next/font/google'
+ 
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+})
+ 
+export default function MyApp({ Component, pageProps }) {
+  return (
+    <main className={`${inter.variable} font-sans`}>
+      <Component {...pageProps} />
+    </main>
+  )
+}
+
+## Step 0: Installing Framer Motion in your Next.js app
+
+import { motion } from 'framer-motion';
+
+npm install framer-motion
+
+
+## All Icons SVGR Convarted
+https://react-svgr.com/playground/
